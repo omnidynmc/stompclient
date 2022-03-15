@@ -1,0 +1,36 @@
+{
+   pthread lameness
+   Helgrind:Race
+   fun:mythread_wrapper
+}
+
+{
+  helgrind std::string 1
+  Helgrind:Race
+  fun:_ZNSs4_*_M_set_*sharable*
+}
+
+{
+  helgrind std::string 2
+  Helgrind:Race
+  fun:_ZNKSs4_Rep12_M_is_leakedEv*
+}
+
+{
+  helgrind std::string 3
+  Helgrind:Race
+  fun:_ZNKSs4sizeEv*
+}
+
+{
+  helgrind std::string 4
+  Helgrind:Race
+  fun:_ZNSs4_Rep8_M_cloneERKSaIcEj*
+}
+
+{
+  helgrind std::string 5
+  Helgrind:Race
+  fun:_ZNKSs4_Rep12_M_is_sharedEv*
+}
+
