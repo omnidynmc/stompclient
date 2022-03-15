@@ -6,7 +6,8 @@
 #include <list>
 
 #include <openframe/openframe.h>
-#include <stomp/StompClient.h>
+
+#include "StompClient.h"
 
 namespace stomp {
 /**************************************************************************

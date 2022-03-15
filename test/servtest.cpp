@@ -12,9 +12,10 @@
 #include <signal.h>
 
 #include <openframe/openframe.h>
-#include <stomp/StompServer.h>
-#include <stomp/StompParser.h>
-#include <stomp/StompFrame.h>
+
+#include "StompServer.h"
+#include "StompParser.h"
+#include "StompFrame.h"
 
 bool is_done = false;
 

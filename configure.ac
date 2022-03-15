@@ -5,7 +5,7 @@ AC_PREREQ([2.65])
 AC_INIT([stomp], [1.0.0.1], [gcarter@openaprs.net])
 AC_CONFIG_SRCDIR([src/StompPeer.cpp])
 AC_CONFIG_HEADERS([include/stomp/config.h])
-AM_INIT_AUTOMAKE([stomp], [1.0.0.1])
+AM_INIT_AUTOMAKE
 LT_INIT
 AC_CONFIG_MACRO_DIR([m4])
 
@@ -21,12 +21,12 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_LANG([C++])
 
-prefix="`pwd`"
-bindir="`pwd`"
-libdir="`pwd`/lib"
-includedir="`pwd`/include"
-ofincludedir="`pwd`/libraries/openframe/include"
-oflibdir="`pwd`/libraries/openframe/lib"
+prefix="/usr/local"
+#bindir="`pwd`"
+#libdir="`pwd`/lib"
+#includedir="`pwd`/include"
+ofincludedir="/usr/local/include/openframe"
+oflibdir="/usr/local/lib"
 
 osincludedir="`pwd`/libraries/openstats/include"
 oslibdir="`pwd`/libraries/openstats/lib"
@@ -59,6 +59,7 @@ LIBS="$LIBS -L`pwd`/lib $DEPS_LIBS -L$oflibdir -L$oslibdir -lopenframe -lopensta
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile
+                 include/stomp/Makefile
                  test/Makefile
                ])
 AC_OUTPUT

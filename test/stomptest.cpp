@@ -11,10 +11,11 @@
 #include <unistd.h>
 
 #include <openframe/openframe.h>
-#include <stomp/Stomp.h>
-#include <stomp/StompFrame.h>
-#include <stomp/StompClient.h>
-#include <stomp/StompHeader.h>
+
+#include "Stomp.h"
+#include "StompFrame.h"
+#include "StompClient.h"
+#include "StompHeader.h"
 
 std::string g_last_message_id;
 size_t g_num_messages = 0;

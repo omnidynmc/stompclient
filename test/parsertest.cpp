@@ -11,8 +11,9 @@
 #include <unistd.h>
 
 #include <openframe/openframe.h>
-#include <stomp/StompParser.h>
-#include <stomp/StompFrame.h>
+
+#include "StompParser.h"
+#include "StompFrame.h"
 
 class Parser : public stomp::StompParser {
   public:
