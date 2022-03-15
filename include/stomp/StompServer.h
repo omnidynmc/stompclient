@@ -45,7 +45,7 @@ namespace stomp {
                       public openstats::StatsClient_Interface,
                       public openframe::ThreadMessenger {
     public:
-      StompServer(const int, const int);
+      StompServer(const int, const int, const std::string &bind_ip="");
       virtual ~StompServer();
 
       /**********************

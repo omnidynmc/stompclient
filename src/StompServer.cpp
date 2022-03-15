@@ -35,8 +35,8 @@ namespace stomp {
   const size_t StompServer::kDefaultMaxWork 		= 100;
   const time_t StompServer::kDefaultQueueMessageExpire	= 3600;
 
-  StompServer::StompServer(const int port, const int max)
-              : ListenController(port, max),
+  StompServer::StompServer(const int port, const int max, const std::string &bind_ip)
+              : ListenController(port, max, bind_ip),
                 _debug(false),
                 _intval_logstats(kDefaultLogstatsInterval),
                 _time_queue_expire(kDefaultQueueMessageExpire),
