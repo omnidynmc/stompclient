@@ -60,7 +60,7 @@ namespace stomp {
     try {
       _logstats = new Stopwatch(_intval_logstats);
     } // try
-    catch(bad_alloc xa) {
+    catch(bad_alloc &xa) {
       assert(false);
     } // catch
 
@@ -84,7 +84,7 @@ namespace stomp {
     try {
       _logstats = new Stopwatch(_intval_logstats);
     } // try
-    catch(bad_alloc xa) {
+    catch(bad_alloc &xa) {
       assert(false);
     } // catch
 

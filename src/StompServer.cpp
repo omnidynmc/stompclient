@@ -557,7 +557,7 @@ namespace stomp {
       peer->set_elogger(elogger(), elog_name() );
       peer->replace_stats( stats() );
     } // try
-    catch(std::bad_alloc xa) {
+    catch(std::bad_alloc &xa) {
       assert(false);
     } // catch
 

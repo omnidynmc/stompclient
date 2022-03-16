@@ -90,7 +90,7 @@ namespace stomp {
     try {
       _peer = new openframe::Peer;
     } // try
-    catch(std::bad_alloc xa) {
+    catch(std::bad_alloc &xa) {
       assert(false);
     } // catch
 
@@ -110,7 +110,7 @@ namespace stomp {
       try {
         ok = next_frame(frame);
       } // try
-      catch(Stomp_Exception ex) {
+      catch(Stomp_Exception &ex) {
         ok = false;
       } // catch
 

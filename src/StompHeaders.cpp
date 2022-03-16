@@ -111,7 +111,7 @@ namespace stomp {
       try {
         line = buf.nextLine();
       } // try
-      catch(std::out_of_range ex) {
+      catch(std::out_of_range &ex) {
         throw StompInvalidHeader_Exception();
       } // catch
 

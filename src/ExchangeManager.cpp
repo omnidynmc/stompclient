@@ -68,7 +68,7 @@ namespace stomp {
       openframe::StringTool::replace("/", ".", safe_key);
       exch->replace_stats(stats(), "libstomp.exchanges."+safe_key);
     } // try
-    catch(std::bad_alloc xa) {
+    catch(std::bad_alloc &xa) {
       assert(false);
     } // catch
 

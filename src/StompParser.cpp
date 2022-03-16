@@ -296,7 +296,7 @@ std::cout << "LEN(" << len << ") HEADER(" << header_str << ")" << std::endl;
       try {
         header = new StompHeader(header_str);
       } // try
-      catch(Stomp_Exception ex) {
+      catch(Stomp_Exception &ex) {
         // unable to parse header send error
         send_error("unable to parse header");
         _process_reset();
